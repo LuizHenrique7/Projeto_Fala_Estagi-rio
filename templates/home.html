@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <label>Nome do estagiário: </label>
+    <input id="your_name" type="text" name="nome" required>
+    <label>Postagem: </label>
+    <input id="your_name" type="text" name="postagem" required>
+    <label>Data: </label>
+    <input id="your_name" type="date"  name="data" required>
+    <input type="submit">
+</form>
+
+<div>
+
+    {% for estagiario in lista_ordenada %}
+        <H1>{{ estagiario.nome }}</H1>
+        <p>{{ estagiario.postagem }}</p>
+        <p>{{ estagiario.data }}</p>
+
+    {% endfor %}
+
+</div>
+
+
+
+</body>
+</html>
