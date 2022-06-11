@@ -1,0 +1,46 @@
+
+
+body{
+    background-color: #a6e7d8
+}
+
+
+
+.post{
+
+background-color: #ffffff;
+border-radius: 3vh;
+padding: 3vh;
+font-size: 2vh;
+margin: 1.5vh;
+font-family: arial
+
+
+
+}
+
+.formulario{
+    background-color: #5f9cd7;
+    border-radius: 3vh;
+    padding: 3vh;
+    font-size: 3vh;
+    margin: 1.5vh;
+    font-family: arial
+}
+
+
+
+
+.botao{
+    border-radius: 1vh;
+    cursor: pointer;
+    color: #000000;
+    background-color: #5ffa4b;
+    border-color: rgba(0, 0, 0, 0.69);
+    border-style: solid;
+    padding: 1vh;
+    font-family: arial;
+
+
+
+}

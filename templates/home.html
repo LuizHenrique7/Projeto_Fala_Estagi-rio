@@ -5,32 +5,34 @@
     <meta charset="UTF-8">
     <title>ProjetoFalaEstagiario</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/633/633832.png" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2572/2572957.png" />
 </head>
 <body>
-<form method="post" id="teste">
+<form class="formulario" method="post">
     {% csrf_token %}
     <label>Nome do estagiário: </label>
     <input id="nome" type="text" name="nome" required>
     <label>Postagem: </label>
-    <input id="postagem" type="text" name="postagem" required>
+    <input id="postagem" type="text" name="postagem"  required>
     <label>Data: </label>
     <input id="data" type="date"  name="data" required>
-    <input type="submit">
+    <button type="submit" class="botao" >Postar</button>
 </form>
 
-<div>
+</section>
 
+
+ <section>
     {% for estagiario in lista_ordenada %}
-        <H1>{{ estagiario.nome }}</H1>
-        <p>{{ estagiario.postagem }}</p>
-        <p>{{ estagiario.data }}</p>
-
+    <section class="post">
+       <div>
+            <H1>{{ estagiario.nome }}</H1>
+            <p>{{ estagiario.postagem }}</p>
+            <p>{{ estagiario.data }}</p>
+       </div>
+    </section>
     {% endfor %}
 
-</div>
-
-
-
+ </section>
 </body>
 </html>
