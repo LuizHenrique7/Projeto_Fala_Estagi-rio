@@ -1,18 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ProjetoFalaEstagiario</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/633/633832.png" />
 </head>
 <body>
-<form method="post">
+<form method="post" id="teste">
     {% csrf_token %}
     <label>Nome do estagiário: </label>
-    <input id="your_name" type="text" name="nome" required>
+    <input id="nome" type="text" name="nome" required>
     <label>Postagem: </label>
-    <input id="your_name" type="text" name="postagem" required>
+    <input id="postagem" type="text" name="postagem" required>
     <label>Data: </label>
-    <input id="your_name" type="date"  name="data" required>
+    <input id="data" type="date"  name="data" required>
     <input type="submit">
 </form>
 
